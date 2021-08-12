@@ -26,7 +26,6 @@ pipeline {
         sh 'mvn clean test'
       }
     }
-
     stage('package') {
       when {
         branch 'master'
